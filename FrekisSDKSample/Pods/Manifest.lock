@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - Frekis (0.0.4):
+  - Frekis (0.1.0):
     - FMDB
     - NotificationBannerSwift
   - MarqueeLabel (4.0.2)
@@ -12,23 +12,26 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Frekis
+  - Frekis (from `../`)
 
 SPEC REPOS:
   trunk:
     - FMDB
-    - Frekis
     - MarqueeLabel
     - NotificationBannerSwift
     - SnapKit
 
+EXTERNAL SOURCES:
+  Frekis:
+    :path: "../"
+
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Frekis: ad148cc942ae0f0d0148b6c46273541640df01b9
+  Frekis: 583ec8798e39be22bcdcd005d4331776bc095afc
   MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
   NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 0224d8cce2a4250c7e7715d4c5dba08e6f18202b
+PODFILE CHECKSUM: 17d0a5f952216fd7536524e1da85b5377cdfbda4
 
 COCOAPODS: 1.10.0.beta.1
