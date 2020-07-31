@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint Frekis.podspec' to ensure this is a
+#  Be sure to run `pod spec lint FrekisSDK.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Frekis"
-  spec.version      = "0.0.4"
+  spec.name         = "FrekisSDK"
+  spec.version      = "0.0.1"
   spec.summary      = "Frekis SDK is iOS Framework which will help you to connect with the frekis account and manage your assets with in own app."
 
   # This description is used to generate tags and improve search results.
@@ -98,7 +98,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   # spec.public_header_files = "Classes/**/*.h"
 
-spec.ios.vendored_frameworks = "Frekis/FrekisFramework.framework"
+spec.ios.vendored_frameworks = "FrekisSDK/FrekisFramework.framework"
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
