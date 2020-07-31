@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DJL-e0-FAy">
+            <objects>
+                <viewController id="VbT-Fs-wRT" customClass="ViewController" customModule="FrekisDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tMO-ax-2vI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eos-Tc-SIB">
+                                <rect key="frame" x="25" y="639" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GnS-We-ix6"/>
+                                </constraints>
+                                <state key="normal" title="1. Get User Detail"/>
+                                <connections>
+                                    <action selector="getUserDetail:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="Mkl-RQ-x2M"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZD-XL-lj0">
+                                <rect key="frame" x="25" y="686" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="yTS-AX-nPC"/>
+                                </constraints>
+                                <state key="normal" title="2. Connect Asset"/>
+                                <connections>
+                                    <action selector="connectDevice:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="8IA-mi-HBc"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-fR-Agp">
+                                <rect key="frame" x="25" y="733" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="OPS-KZ-dFp"/>
+                                </constraints>
+                                <state key="normal" title="3. Unlock Asset"/>
+                                <connections>
+                                    <action selector="unlockDevice:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="HMt-GL-yXm"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9V-3A-zZg">
+                                <rect key="frame" x="25" y="780" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="08N-Kw-nky"/>
+                                </constraints>
+                                <state key="normal" title="4. Lock Asset"/>
+                                <connections>
+                                    <action selector="lockDevice:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="d39-lw-z37"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A0-xq-Jli">
+                                <rect key="frame" x="25" y="827" width="364" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bAg-jk-uhV"/>
+                                </constraints>
+                                <state key="normal" title="5. Disconnect Asset"/>
+                                <connections>
+                                    <action selector="disconnect:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="u1H-c0-mkD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-Bm-XHz">
+                                <rect key="frame" x="25" y="59" width="49.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frekis Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XML-tf-3C2">
+                                <rect key="frame" x="25" y="90" width="78.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rx3-Ac-Fro">
+                                <rect key="frame" x="25" y="119" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uHp-If-hdi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFi-FY-2QJ">
+                                <rect key="frame" x="271" y="118" width="118" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.34894916370000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Authorized">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="click_Auth:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="8gh-k4-FPs"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lg3-lR-MWe">
+                                <rect key="frame" x="25" y="205" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dbh-tj-srw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frf-jY-LJU">
+                                <rect key="frame" x="271" y="204" width="118" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.34894916370000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Authorized">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="click_Connect:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="sn1-GV-0vs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9p-Gt-pA0">
+                                <rect key="frame" x="25" y="174" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJT-AO-xmE">
+                                <rect key="frame" x="163.5" y="260" width="87" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.34894916370000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Unlock">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="click_UnLock:" destination="VbT-Fs-wRT" eventType="touchUpInside" id="kkS-tp-sMC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GZD-XL-lj0" firstAttribute="trailing" secondItem="eos-Tc-SIB" secondAttribute="trailing" id="21s-HY-yzJ"/>
+                            <constraint firstItem="Rx3-Ac-Fro" firstAttribute="leading" secondItem="XML-tf-3C2" secondAttribute="leading" id="3Ji-sy-4mc"/>
+                            <constraint firstItem="f9p-Gt-pA0" firstAttribute="top" secondItem="Rx3-Ac-Fro" secondAttribute="bottom" constant="25" id="6M0-ww-uEh"/>
+                            <constraint firstItem="XML-tf-3C2" firstAttribute="leading" secondItem="cma-ka-wc4" secondAttribute="leading" constant="25" id="75R-wo-cvh"/>
+                            <constraint firstItem="cJT-AO-xmE" firstAttribute="top" secondItem="lg3-lR-MWe" secondAttribute="bottom" constant="25" id="8iq-zW-a3a"/>
+                            <constraint firstItem="cma-ka-wc4" firstAttribute="trailing" secondItem="frf-jY-LJU" secondAttribute="trailing" constant="25" id="9Fd-DG-CXe"/>
+                            <constraint firstItem="h9V-3A-zZg" firstAttribute="top" secondItem="6Yk-fR-Agp" secondAttribute="bottom" constant="12" id="CBo-dS-6pf"/>
+                            <constraint firstItem="XML-tf-3C2" firstAttribute="top" secondItem="GZT-Bm-XHz" secondAttribute="bottom" constant="10" id="CCG-RW-TOF"/>
+                            <constraint firstItem="GZD-XL-lj0" firstAttribute="leading" secondItem="eos-Tc-SIB" secondAttribute="leading" id="FZV-tg-YPT"/>
+                            <constraint firstItem="GZT-Bm-XHz" firstAttribute="top" secondItem="cma-ka-wc4" secondAttribute="top" constant="15" id="Flw-np-bXH"/>
+                            <constraint firstItem="cma-ka-wc4" firstAttribute="bottom" secondItem="7A0-xq-Jli" secondAttribute="bottom" id="Iw7-cj-370"/>
+                            <constraint firstItem="frf-jY-LJU" firstAttribute="leading" secondItem="lg3-lR-MWe" secondAttribute="trailing" constant="10" id="L2L-hP-aNf"/>
+                            <constraint firstItem="cJT-AO-xmE" firstAttribute="centerX" secondItem="cma-ka-wc4" secondAttribute="centerX" id="LRL-Cz-wsw"/>
+                            <constraint firstItem="eos-Tc-SIB" firstAttribute="leading" secondItem="cma-ka-wc4" secondAttribute="leading" constant="25" id="M34-lP-Pcw"/>
+                            <constraint firstItem="lg3-lR-MWe" firstAttribute="top" secondItem="f9p-Gt-pA0" secondAttribute="bottom" constant="10" id="MGM-0l-m0b"/>
+                            <constraint firstItem="f9p-Gt-pA0" firstAttribute="leading" secondItem="XML-tf-3C2" secondAttribute="leading" id="VVz-rj-SYN"/>
+                            <constraint firstItem="Rx3-Ac-Fro" firstAttribute="top" secondItem="XML-tf-3C2" secondAttribute="bottom" constant="8" id="VWk-9M-Wsh"/>
+                            <constraint firstItem="GZD-XL-lj0" firstAttribute="top" secondItem="eos-Tc-SIB" secondAttribute="bottom" constant="12" id="aK6-d2-BaE"/>
+                            <constraint firstItem="6Yk-fR-Agp" firstAttribute="leading" secondItem="GZD-XL-lj0" secondAttribute="leading" id="af1-0Z-mg0"/>
+                            <constraint firstItem="cma-ka-wc4" firstAttribute="trailing" secondItem="EFi-FY-2QJ" secondAttribute="trailing" constant="25" id="brd-Uq-M1q"/>
+                            <constraint firstItem="7A0-xq-Jli" firstAttribute="leading" secondItem="h9V-3A-zZg" secondAttribute="leading" id="cRg-si-gRx"/>
+                            <constraint firstItem="6Yk-fR-Agp" firstAttribute="trailing" secondItem="GZD-XL-lj0" secondAttribute="trailing" id="cSw-JC-Qb8"/>
+                            <constraint firstItem="lg3-lR-MWe" firstAttribute="leading" secondItem="cma-ka-wc4" secondAttribute="leading" constant="25" id="dvN-vp-TDc"/>
+                            <constraint firstItem="7A0-xq-Jli" firstAttribute="trailing" secondItem="h9V-3A-zZg" secondAttribute="trailing" id="fKA-j9-NMh"/>
+                            <constraint firstItem="eos-Tc-SIB" firstAttribute="centerX" secondItem="cma-ka-wc4" secondAttribute="centerX" id="gDx-tf-AD1"/>
+                            <constraint firstItem="EFi-FY-2QJ" firstAttribute="leading" secondItem="Rx3-Ac-Fro" secondAttribute="trailing" constant="10" id="hMP-Bj-aIY"/>
+                            <constraint firstItem="h9V-3A-zZg" firstAttribute="trailing" secondItem="6Yk-fR-Agp" secondAttribute="trailing" id="iue-UH-PLN"/>
+                            <constraint firstItem="frf-jY-LJU" firstAttribute="centerY" secondItem="lg3-lR-MWe" secondAttribute="centerY" id="j4b-ix-Bvt"/>
+                            <constraint firstItem="6Yk-fR-Agp" firstAttribute="top" secondItem="GZD-XL-lj0" secondAttribute="bottom" constant="12" id="pGu-4k-GJ1"/>
+                            <constraint firstItem="cma-ka-wc4" firstAttribute="trailing" secondItem="eos-Tc-SIB" secondAttribute="trailing" constant="25" id="suZ-fg-8Ah"/>
+                            <constraint firstItem="7A0-xq-Jli" firstAttribute="top" secondItem="h9V-3A-zZg" secondAttribute="bottom" constant="12" id="tbe-Cu-2pF"/>
+                            <constraint firstItem="EFi-FY-2QJ" firstAttribute="centerY" secondItem="Rx3-Ac-Fro" secondAttribute="centerY" id="u3n-DW-Fgl"/>
+                            <constraint firstItem="GZT-Bm-XHz" firstAttribute="leading" secondItem="cma-ka-wc4" secondAttribute="leading" constant="25" id="vli-51-S9v"/>
+                            <constraint firstItem="h9V-3A-zZg" firstAttribute="leading" secondItem="6Yk-fR-Agp" secondAttribute="leading" id="wtk-bl-Bte"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cma-ka-wc4"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAuth" destination="EFi-FY-2QJ" id="dMo-pl-DM2"/>
+                        <outlet property="btnConnect" destination="frf-jY-LJU" id="uIV-MD-RPq"/>
+                        <outlet property="btnUnLock" destination="cJT-AO-xmE" id="2vZ-k3-el2"/>
+                        <outlet property="lblKey" destination="XML-tf-3C2" id="xal-Cs-FdH"/>
+                        <outlet property="lblLock" destination="f9p-Gt-pA0" id="oSZ-rZ-O92"/>
+                        <outlet property="lblStatus" destination="GZT-Bm-XHz" id="Jh2-Ek-3Uh"/>
+                        <outlet property="txtKey" destination="Rx3-Ac-Fro" id="sMw-nC-tMx"/>
+                        <outlet property="txtLockID" destination="lg3-lR-MWe" id="7Fq-Eg-92D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNr-oe-HKT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="120"/>
+        </scene>
+    </scenes>
+</document>

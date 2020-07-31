@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C4751EB24D3E0EB0089DD96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4751EA24D3E0EB0089DD96 /* AppDelegate.swift */; };
+		4C4751EF24D3E0EB0089DD96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4751EE24D3E0EB0089DD96 /* ViewController.swift */; };
+		4C4751F224D3E0EB0089DD96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4751F024D3E0EB0089DD96 /* Main.storyboard */; };
+		4C4751F424D3E0EC0089DD96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4751F324D3E0EC0089DD96 /* Assets.xcassets */; };
+		4C4751F724D3E0EC0089DD96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4751F524D3E0EC0089DD96 /* LaunchScreen.storyboard */; };
+		94B3CA3CC05B6AA19E5E3C41 /* Pods_FrekisSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7683DF0DD4053EBF73B2534 /* Pods_FrekisSDKSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D4F7F8E969F7AA620E674A3 /* Pods-FrekisSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrekisSDKSample.release.xcconfig"; path = "Target Support Files/Pods-FrekisSDKSample/Pods-FrekisSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		4C4751E724D3E0EB0089DD96 /* FrekisSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrekisSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4751EA24D3E0EB0089DD96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C4751EE24D3E0EB0089DD96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C4751F124D3E0EB0089DD96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C4751F324D3E0EC0089DD96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C4751F624D3E0EC0089DD96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C4751F824D3E0EC0089DD96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7106CACD649329F7BA6269 /* Pods-FrekisSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrekisSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-FrekisSDKSample/Pods-FrekisSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		E7683DF0DD4053EBF73B2534 /* Pods_FrekisSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrekisSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C4751E424D3E0EB0089DD96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B3CA3CC05B6AA19E5E3C41 /* Pods_FrekisSDKSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C4751DE24D3E0EB0089DD96 = {
+			isa = PBXGroup;
+			children = (
+				4C4751E924D3E0EB0089DD96 /* FrekisSDKSample */,
+				4C4751E824D3E0EB0089DD96 /* Products */,
+				63CF0A566BCF7A04DC6FCA98 /* Pods */,
+				9E798E5594A5934A8EF72F9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C4751E824D3E0EB0089DD96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C4751E724D3E0EB0089DD96 /* FrekisSDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C4751E924D3E0EB0089DD96 /* FrekisSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				4C4751EA24D3E0EB0089DD96 /* AppDelegate.swift */,
+				4C4751EE24D3E0EB0089DD96 /* ViewController.swift */,
+				4C4751F024D3E0EB0089DD96 /* Main.storyboard */,
+				4C4751F324D3E0EC0089DD96 /* Assets.xcassets */,
+				4C4751F524D3E0EC0089DD96 /* LaunchScreen.storyboard */,
+				4C4751F824D3E0EC0089DD96 /* Info.plist */,
+			);
+			path = FrekisSDKSample;
+			sourceTree = "<group>";
+		};
+		63CF0A566BCF7A04DC6FCA98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D7106CACD649329F7BA6269 /* Pods-FrekisSDKSample.debug.xcconfig */,
+				3D4F7F8E969F7AA620E674A3 /* Pods-FrekisSDKSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E798E5594A5934A8EF72F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7683DF0DD4053EBF73B2534 /* Pods_FrekisSDKSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C4751E624D3E0EB0089DD96 /* FrekisSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4751FB24D3E0EC0089DD96 /* Build configuration list for PBXNativeTarget "FrekisSDKSample" */;
+			buildPhases = (
+				E0AF4128CC6FCBD0FF32E6E9 /* [CP] Check Pods Manifest.lock */,
+				4C4751E324D3E0EB0089DD96 /* Sources */,
+				4C4751E424D3E0EB0089DD96 /* Frameworks */,
+				4C4751E524D3E0EB0089DD96 /* Resources */,
+				4EBB3E237C8EBC265F0336D4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrekisSDKSample;
+			productName = FrekisSDKSample;
+			productReference = 4C4751E724D3E0EB0089DD96 /* FrekisSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C4751DF24D3E0EB0089DD96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Yash;
+				TargetAttributes = {
+					4C4751E624D3E0EB0089DD96 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 4C4751E224D3E0EB0089DD96 /* Build configuration list for PBXProject "FrekisSDKSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C4751DE24D3E0EB0089DD96;
+			productRefGroup = 4C4751E824D3E0EB0089DD96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C4751E624D3E0EB0089DD96 /* FrekisSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C4751E524D3E0EB0089DD96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4751F724D3E0EC0089DD96 /* LaunchScreen.storyboard in Resources */,
+				4C4751F424D3E0EC0089DD96 /* Assets.xcassets in Resources */,
+				4C4751F224D3E0EB0089DD96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EBB3E237C8EBC265F0336D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrekisSDKSample/Pods-FrekisSDKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrekisSDKSample/Pods-FrekisSDKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrekisSDKSample/Pods-FrekisSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0AF4128CC6FCBD0FF32E6E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrekisSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C4751E324D3E0EB0089DD96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4751EF24D3E0EB0089DD96 /* ViewController.swift in Sources */,
+				4C4751EB24D3E0EB0089DD96 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C4751F024D3E0EB0089DD96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4751F124D3E0EB0089DD96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C4751F524D3E0EC0089DD96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4751F624D3E0EC0089DD96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C4751F924D3E0EC0089DD96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C4751FA24D3E0EC0089DD96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C4751FC24D3E0EC0089DD96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7106CACD649329F7BA6269 /* Pods-FrekisSDKSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFMNLRV564;
+				INFOPLIST_FILE = FrekisSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FrekisSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C4751FD24D3E0EC0089DD96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4F7F8E969F7AA620E674A3 /* Pods-FrekisSDKSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFMNLRV564;
+				INFOPLIST_FILE = FrekisSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FrekisSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C4751E224D3E0EB0089DD96 /* Build configuration list for PBXProject "FrekisSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4751F924D3E0EC0089DD96 /* Debug */,
+				4C4751FA24D3E0EC0089DD96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4751FB24D3E0EC0089DD96 /* Build configuration list for PBXNativeTarget "FrekisSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4751FC24D3E0EC0089DD96 /* Debug */,
+				4C4751FD24D3E0EC0089DD96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C4751DF24D3E0EB0089DD96 /* Project object */;
+}
