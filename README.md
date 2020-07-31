@@ -6,7 +6,7 @@ Frekis SDK is iOS Framework which will help you to connect with the frekis accou
 [CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Frekis into your Xcode project using CocoaPods, specify it in your Podfile:
 ```bash
 
-  pod 'Frekis', '~> 0.0.5'
+  pod 'Frekis', '~> 0.0.6'
 ```
 Include Frekis SDK dependency in to your Xcode project
 ```bash
