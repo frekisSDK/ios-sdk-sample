@@ -8,7 +8,7 @@
 
 import UIKit
 import FrekisFramework
-
+import NVActivityIndicatorView
 class ViewController: UIViewController {
     var isAuth : Bool = false
     var isConnct : Bool = false
@@ -71,17 +71,26 @@ class ViewController: UIViewController {
     //MARK:- Framework functions
     //1. Get users detail from secret_key
     @IBAction func click_Auth(_ sender : UIButton){
+       
         if isAuth {
+            
+            self.startLoader(message: "Unauthorization....")
             self.btnAuth.isSelected = false
             lblStatus.text = "Disconnecting.."
             frekis!.disconnect(lock_id: self.txtLockID.text!)
             self.hideLockPart()
+          self.btnConnect.isSelected = false
+                  
+                     self.btnUnLock.isHidden = true
+                     self.isConnct = false
+            self.isAuth = false
         }else{
-          
+           self.startLoader(message: "Authorization....")
             lblStatus.text = "Please wait.."
             frekis!.setAuthKey(token: self.txtKey.text!) { (isSuccess) in
                 self.lblStatus.text = "Get detail \(isSuccess ? "success.." : "failed..")"
                 print(isSuccess)
+                self.hideLoader()
                 self.isAuth = isSuccess
                 if isSuccess {
                     
@@ -107,14 +116,19 @@ class ViewController: UIViewController {
         self.btnUnLock.isHidden = true
     }
     @IBAction func click_Connect(_ sender : UIButton){
+        
           if isConnct {
               self.btnConnect.isSelected = false
             lblStatus.text = "Disconnecting.."
+            self.startLoader(message: "Disconnecting....")
             frekis!.disconnect(lock_id: self.txtLockID.text!)
             self.btnUnLock.isHidden = true
+            self.isConnct = false
           }else{
+             self.startLoader(message: "Connecting....")
             lblStatus.text = "Scanning.."
             frekis!.connect(lock_id: self.txtLockID.text!) { (isConnected,lock_id) in
+                self.hideLoader()
                 self.isConnct = isConnected
                 self.get_lock_id = lock_id
                  self.lblStatus.text = "Asset connection \(isConnected ? "success.." : "failed..")"
@@ -130,10 +144,13 @@ class ViewController: UIViewController {
           }
       }
     @IBAction func click_UnLock(_ sender : UIButton){
-         
+         self.startLoader(message: "Unlocking asset..")
                 lblStatus.text = "Unlocking asset.."
                 frekis!.unlockAsset(lock_id: self.get_lock_id, location: unlockLocation) { (unlockStatus) in
-                        if unlockStatus {
+                    self.hideLoader()
+                    
+                    if unlockStatus {
+                        self.isUnlock = true
                             self.btnUnLock.isHidden = true
                         }
                           self.lblStatus.text = "Asset unlock \(unlockStatus ? "success.." : "failed..")"
@@ -194,22 +211,47 @@ class ViewController: UIViewController {
 //MARK:- Delegate
 extension ViewController : FrekisDelegate{
     func deviceManuallyLocked() {
-        lblStatus.text = "Locked"
-               frekis!.lockAsset(lock_id: self.txtLockID.text!, location: lockLocation) { (lockStatus) in
-                         print("Device lock status = ", lockStatus)
-                if lockStatus {
-                    DispatchQueue.main.async {
-                        self.lblStatus.text = "Locked"
-                        self.btnUnLock.isHidden = false
+        if self.isAuth && self.isConnct && self.isUnlock {
+            lblStatus.text = "Locked"
+            self.startLoader(message: "Locking asset..")
+                   frekis!.lockAsset(lock_id: self.txtLockID.text!, location: lockLocation) { (lockStatus) in
+                             print("Device lock status = ", lockStatus)
+                    self.hideLoader()
+                    if lockStatus {
+                        self.isUnlock = false
+                        DispatchQueue.main.async {
+                            self.lblStatus.text = "Locked"
+                            self.btnUnLock.isHidden = false
+                        }
+                        
                     }
-                    
-                }
-               }
+                   }
+        }
+
     }
     
     func deviceDisconnected() {
+        if self.isAuth {
+            lblStatus.text = "Disconnected.."
+        }else{
+            lblStatus.text = "Unauthorized.."
+        }
         //handle disconnection..
-        lblStatus.text = "Disconnected.."
+        
+        self.hideLoader()
     }
    
+}
+
+extension UIViewController : NVActivityIndicatorViewable {
+    
+    func hideLoader(){
+        stopAnimating()
+
+    }
+    
+    func startLoader(message : String? = nil){
+        startAnimating(CGSize(width: 50, height: 50), message: message, type: .ballPulseSync, color: .white, padding: 0)
+       }
+    
 }

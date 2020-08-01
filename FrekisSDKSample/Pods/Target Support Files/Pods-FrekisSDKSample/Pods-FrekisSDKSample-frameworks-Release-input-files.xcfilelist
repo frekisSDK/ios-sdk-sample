@@ -2,5 +2,6 @@ ${PODS_ROOT}/Target Support Files/Pods-FrekisSDKSample/Pods-FrekisSDKSample-fram
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${PODS_ROOT}/../../Frekis/FrekisFramework.framework
 ${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

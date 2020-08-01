@@ -9,16 +9,21 @@ PODS:
   - NotificationBannerSwift (3.0.2):
     - MarqueeLabel (~> 4.0.0)
     - SnapKit (~> 5.0.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Frekis (from `../`)
+  - NVActivityIndicatorView (~> 4.8.0)
 
 SPEC REPOS:
   trunk:
     - FMDB
     - MarqueeLabel
     - NotificationBannerSwift
+    - NVActivityIndicatorView
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -30,8 +35,9 @@ SPEC CHECKSUMS:
   Frekis: 8ad5c5408b184a97bcf6dacde8c209f3c6236738
   MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
   NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 17d0a5f952216fd7536524e1da85b5377cdfbda4
+PODFILE CHECKSUM: f1396e7326d178466ad984bf98d87550690884d5
 
 COCOAPODS: 1.10.0.beta.1
