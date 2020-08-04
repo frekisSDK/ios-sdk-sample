@@ -10,7 +10,8 @@
 #define CommonMacro_h
 
 #ifdef DEBUG
-#define DEBUGLOG(xx, ...)  NSLog(@"############### BLE HELPER ############### %s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+//#define DEBUGLOG(xx, ...)  NSLog(@"############### BLE HELPER ############### %s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define DEBUGLOG(xx, ...) 
 #elif RELEASE
 #define DEBUGLOG(xx, ...)  ((void)0)
 #else
