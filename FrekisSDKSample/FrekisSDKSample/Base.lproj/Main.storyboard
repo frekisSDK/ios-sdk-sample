@@ -208,6 +208,7 @@
                         <outlet property="lblKey" destination="XML-tf-3C2" id="xal-Cs-FdH"/>
                         <outlet property="lblLock" destination="f9p-Gt-pA0" id="oSZ-rZ-O92"/>
                         <outlet property="lblStatus" destination="GZT-Bm-XHz" id="Jh2-Ek-3Uh"/>
+                        <outlet property="txtDetails" destination="zuR-BR-lbT" id="sTJ-0b-1fu"/>
                         <outlet property="txtKey" destination="Rx3-Ac-Fro" id="sMw-nC-tMx"/>
                         <outlet property="txtLockID" destination="lg3-lR-MWe" id="7Fq-Eg-92D"/>
                     </connections>

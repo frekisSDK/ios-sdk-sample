@@ -155,7 +155,8 @@ class ViewController: UIViewController {
                     self.isAlarm = asset!.isVibrationAlert
                     self.btnAlarm.isSelected = self.isAlarm
                     if let data = asset {
-                        self.txtDetails.text = "\(data)"
+//                        self.txtDetails.text = "\(data)"
+                        self.dataAsset(asset: data)
                     }
                 }
                 
@@ -179,7 +180,8 @@ class ViewController: UIViewController {
             print("Device unlock status = ", unlockStatus)
             
             if let data = asset {
-                self.txtDetails.text = "\(data)"
+//                self.txtDetails.text = "\(data)"
+                self.dataAsset(asset: data)
             }
         }
         
@@ -201,7 +203,8 @@ class ViewController: UIViewController {
                      print("Connected device instance not found, please reconnect device to continue.")
                 }
                 if let data = asset {
-                    self.txtDetails.text = "\(data)"
+//                    self.txtDetails.text = "\(data)"
+                    self.dataAsset(asset: data)
                 }
             }
         }else{
@@ -220,7 +223,8 @@ class ViewController: UIViewController {
                      print("Connected device instance not found, please reconnect device to continue.")
                 }
                 if let data = asset {
-                    self.txtDetails.text = "\(data)"
+//                    self.txtDetails.text = "\(data)"
+                    self.dataAsset(asset: data)
                 }
 
             }
@@ -299,7 +303,8 @@ extension ViewController : FrekisDelegate{
         }
         
         if let asset = data {
-            self.txtDetails.text = "\(asset)"
+//            self.txtDetails.text = "\(asset)"
+            self.dataAsset(asset: asset)
         }
 
         
@@ -314,8 +319,14 @@ extension ViewController : FrekisDelegate{
         //handle disconnection..
         
         self.hideLoader()
+        self.txtDetails.text = ""
     }
     
+    
+    func dataAsset(asset : AssetModel){
+        var str = "asset ID : \(asset.id)\nbattery : \(asset.battery)\nlocked : \(asset.locked)\nisConnected : \(asset.isConnected)\nisVibrationAlert : \(asset.isVibrationAlert)"
+        self.txtDetails.text = str
+    }
 }
 
 extension UIViewController {
