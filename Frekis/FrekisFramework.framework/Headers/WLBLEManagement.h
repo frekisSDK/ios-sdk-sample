@@ -36,6 +36,7 @@ typedef void(^WLBLEManagementUpdateUIBlock)(void);
 typedef void(^WLBLEManagementUpdateBluethooth)(BOOL);
 typedef void(^WLBLEManagementDisconnectedBlock)(CBPeripheral *peripheral);
 typedef void(^WLBLEManagementPasswordChanged)(CBPeripheral *peripheral, FMBLEModel *fmBLEModel, BOOL);
+typedef void(^WLBLEManagementVibrationChange)(CBPeripheral *peripheral, FMBLEModel *fmBLEModel, NSInteger);
 typedef void(^WLBLEManagementLocked)(CBPeripheral *peripheral, FMBLEModel *fmBLEModel, BOOL);
 
 @interface WLBLEManagement : NSObject
@@ -65,6 +66,9 @@ typedef void(^WLBLEManagementLocked)(CBPeripheral *peripheral, FMBLEModel *fmBLE
 
 /** WLBLEManagementPasswordChanged */
 @property (copy, nonatomic) WLBLEManagementPasswordChanged passwordChange;
+
+/** WLBLEManagementVibrationChange */
+@property (copy, nonatomic) WLBLEManagementVibrationChange vibrationChange;
 
 /** WLBLEManagementConnectedBlock */
 @property (copy, nonatomic) WLBLEManagementConnectedBlock connectedBlock;

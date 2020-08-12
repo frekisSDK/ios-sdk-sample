@@ -5,7 +5,7 @@ Frekis SDK is iOS Framework which will help you to connect with the frekis accou
 ## Installation
 [CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Frekis into your Xcode project using CocoaPods, specify it in your Podfile:
 ```bash
-pod 'Frekis', '~> 1.0.2'
+pod 'Frekis', '~> 1.0.3'
 ```
 Include Frekis SDK dependency in to your Xcode project
 ```bash
@@ -28,7 +28,7 @@ frekis.setAuthKey(token: { SECRET_API_KEY}) { (isSuccess) in
 ```
 **Connection** is for Connect Ble device with Frekis SDK.
 ```Swift
-frekis.connect(lock_id: testLockID) { (isConnected,lock_id) in
+frekis.connect(lock_id: testLockID) { (isConnected,lock_id,asset) in
     //Save this lock_id as CONNECTED_LOCK_ID for unlock assets 
 }
 ```
@@ -38,7 +38,7 @@ Note, Client has to manually detect the status of lock and call this method once
 // For Unlock Lock
 let unlockLocation = CLLocationCoordinate2D(latitude: 23.082653, longitude: 72.524578)
 //For Location need to always pass user current location
-frekis.unlockAsset(lock_id: CONNECTED_LOCK_ID, location: unlockLocation) { (unlockStatus) in
+frekis.unlockAsset(lock_id: CONNECTED_LOCK_ID, location: unlockLocation) { (unlockStatus,asset) in
 
 }
 
@@ -49,6 +49,21 @@ frekis.lockAsset(lock_id: CONNECTED_LOCK_ID, location: lockLocation) { (lockStat
 
 }
 ```
+
+**Vibration** is for Connected Ble device with Frekis SDK.(Oney if BLE device has this feature)
+```Swift
+frekis!.setVibration(isOn: false) { (status,asset) in
+                if status == 0 {
+                    print("Vibration Off ")
+                }else if status == 1 {
+                    print("Vibration On ")
+                }else if status == 2{
+                    print("Unable to update the alarm ")
+                }else if status == 3{
+                     print("Connected device instance not found, please reconnect device to continue.")
+                }
+}
+```
 **Delegate** **Method** for uses like manually lock the lock and disconnect the lock.
 ```Swift
 //This method get call when lock is discconeted from SDK or When unlocked
@@ -57,7 +72,7 @@ func deviceDisconnected(){
 }
 
 //This method get call when lock is manually locked by user.
-func deviceManuallyLocked(){
+func deviceManuallyLocked(_ data: AssetModel?){
 
 }
 ```

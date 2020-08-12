@@ -349,10 +349,10 @@
 			baseConfigurationReference = 6D7106CACD649329F7BA6269 /* Pods-FrekisSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = D434BVB43A;
+				DEVELOPMENT_TEAM = MFMNLRV564;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FrekisSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -362,7 +362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.FrekisSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = FrekisSDKSample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -373,10 +373,10 @@
 			baseConfigurationReference = 3D4F7F8E969F7AA620E674A3 /* Pods-FrekisSDKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = D434BVB43A;
+				DEVELOPMENT_TEAM = MFMNLRV564;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FrekisSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -386,7 +386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.FrekisSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = FrekisSDKSample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
