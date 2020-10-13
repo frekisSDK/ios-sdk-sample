@@ -1,0 +1,11 @@
+framework module FrekisFramework {
+  umbrella header "FrekisFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module FrekisFramework.Swift {
+    header "FrekisFramework-Swift.h"
+    requires objc
+}
