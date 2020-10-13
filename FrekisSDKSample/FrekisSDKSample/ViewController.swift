@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     
     //MARK:- Variables
     let testSecretKey = "0a02a1ed-b9ce-4500-aec4-7a48db13eba3"
-    let testLockID  =   "0787909A7703B6F9"
+    let testLockID  =   "0787909A7702E282"
     let unlockLocation = CLLocationCoordinate2D(latitude: 23.082653, longitude: 72.524578)
     let lockLocation = CLLocationCoordinate2D(latitude: 23.070490, longitude: 72.522692)
     var isDeviceConnected : Bool = false

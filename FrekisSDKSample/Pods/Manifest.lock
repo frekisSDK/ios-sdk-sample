@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - Frekis (1.0.4):
+  - Frekis (1.0.6):
     - FMDB
     - NotificationBannerSwift
   - MarqueeLabel (4.0.2)
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Frekis: 9d49c80daff0883427b574cf751320adeb72283c
+  Frekis: 490572d696cbe11024e2fe8ff5a43f7978737ac1
   MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
   NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
@@ -40,4 +40,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f1396e7326d178466ad984bf98d87550690884d5
 
-COCOAPODS: 1.10.0.beta.1
+COCOAPODS: 1.9.3

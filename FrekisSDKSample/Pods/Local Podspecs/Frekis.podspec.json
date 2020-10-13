@@ -1,6 +1,6 @@
 {
   "name": "Frekis",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "summary": "Frekis SDK is iOS Framework which will help you to connect with the frekis account and manage your assets with in own app.",
   "description": "Frekis SDK is iOS Framework which will help you to connect with the frekis account and manage your assets with in own app.",
   "homepage": "https://github.com/frekisSDK/ios-sdk-sample",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://github.com/frekisSDK/ios-sdk-sample.git",
-    "tag": "1.0.4"
+    "tag": "1.0.6"
   },
   "platforms": {
-    "ios": "11.0"
+    "ios": "12.0"
   },
   "swift_versions": "5.0",
   "ios": {
-    "vendored_frameworks": "Frekis/FrekisFramework.framework"
+    "vendored_frameworks": "Frekis/Framework/1.0.6/FrekisFramework.framework"
   },
   "dependencies": {
     "NotificationBannerSwift": [

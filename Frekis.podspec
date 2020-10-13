@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Frekis"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.6"
   spec.summary      = "Frekis SDK is iOS Framework which will help you to connect with the frekis account and manage your assets with in own app."
 
   # This description is used to generate tags and improve search results.
@@ -94,11 +94,11 @@ Pod::Spec.new do |spec|
 
   # spec.source_files  = "FrekisSDK"
   # spec.exclude_files = "Classes/Exclude"
-  spec.ios.deployment_target = '11.0'
+  spec.ios.deployment_target = '12.0'
   spec.swift_version = "5.0"
   # spec.public_header_files = "Classes/**/*.h"
 
-spec.ios.vendored_frameworks = "Frekis/FrekisFramework.framework"
+spec.ios.vendored_frameworks = "Frekis/Framework/1.0.6/FrekisFramework.framework"
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
