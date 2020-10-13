@@ -1,4 +1,4 @@
-[![N|Solid](https://secureservercdn.net/160.153.137.14/k8y.264.myftpupload.com/wp-content/uploads/2020/02/IMG_4910-295x300.jpeg)]()
+[![N|Solid](https://k8y.264.myftpupload.com/wp-content/uploads/2020/02/IMG_4910-295x300.jpeg]()
 
 Frekis SDK is iOS Framework which will help you to connect with the frekis account and manage your assets with in own app.
 
